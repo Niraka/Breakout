@@ -1,0 +1,142 @@
+h1 
+{
+	font:40px "Arial Black", "Helvetica Bold", sans-serif;
+    color:#FFFFFF;
+    letter-spacing:.6em;
+	margin:0px;
+}
+
+body
+{
+	font:18px "Arial Black", "Helvetica Bold", sans-serif;
+    color:#FFFFFF;
+    letter-spacing:.1em;
+	background-color:#000000;
+	background-image:url('http://th03.deviantart.net/fs70/PRE/i/2012/207/c/f/stone_wall_texture_by_zagreb_dubrava-d58pwxm.png');
+	background-repeat:repeat;
+	background-size:100% 100%;
+}
+
+p
+{
+	margin-top:7px;
+	margin-bottom:7px;
+}
+
+#container
+{	
+	width:1400px;
+	height:100%;
+	margin:0 auto;
+	text-align:center;
+}
+
+/* ========================================| Header |============================================== */
+
+#header
+{
+	width:100%;
+	height:auto;
+	margin:5px auto;
+}
+
+/* ========================================| Content |============================================== */
+
+#content
+{
+	width:100%;
+	height:720px;
+	margin:5px auto;
+}
+
+#leftContent p
+{
+	margin-bottom:6px;
+	margin-top:18px;
+}
+
+#middleContent
+{
+	width:64%;
+}
+
+#rightContent
+{
+	float:right;
+}
+
+#highScores
+{
+	margin:auto;
+}
+
+#canvasGame
+{
+	background-color:#000000;
+	background-image:url('http://cdn.steamcommunity.com/economy/image/GfsVDqngIa6yM-pzfPp8zaG337_tkC_uZv05aZgcNGrQ8CL18PxnvBLq9o1amjJHrKLGrLjSbfZt8CRxmR81bd30MbXu9HS-E7e6i0PQLEDm8Zj44ogwrDv6MzHXDXRtiK40r-OrJrtC_PTUVIEgCqjwyq203DO0M_tjbIVfeTef9yL9');
+	background-repeat:repeat;
+	background-size:100% 100%;
+	border:3px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#FFFFFF;
+}
+
+/* ========================================| Footer |============================================== */
+
+#footer
+ {
+	width:100%;
+	height:auto;
+	margin:10px auto;
+ }
+ 
+ #buttonRestart
+{
+	width:140px;
+}
+
+/* ========================================| Classes |============================================== */
+
+.highScoresBox
+{
+	margin:35px 0px;
+	width:auto;
+	height:auto;
+}
+
+.footerBlock
+{
+	width:100%;
+	height:auto;
+}
+
+.buttons
+{
+	width:100px;
+	height:34px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:15px;
+	margin-right:15px;
+	font-size:14px;
+}
+
+.buttonsSmall
+{
+	width:80px;
+	height:26px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:10px;
+	font-size:10px;
+}		
+
+.column
+{
+	float:left;
+	width:18%;
+	height:100%;
+}
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Breakout!</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="Game.css" />
+</head>
+
+<body>
+	<div class="container" id="container">
+	
+		<!-- Always at the top -->
+		<div id="header">
+			<h1>B r e a k o u t</h1>
+		</div>
+		
+		<!-- Main content. Between header and footer. -->
+		<div id="content">
+			<div class="column" id="leftContent">
+				<p id="gamePropertiesTitle"> Game Properties </p>
+				<p id="propertyBrickRows"> Brick rows: </p>
+				<button class="buttonsSmall" onclick="modProperty('BrickRow', 'Inc')"> Increase </button>
+				<button class="buttonsSmall" onclick="modProperty('BrickRow', 'Dec')"> Decrease </button>
+				<p id="propertyBrickColumns"> Brick columns: </p>
+				<button class="buttonsSmall" onclick="modProperty('BrickCol', 'Inc')"> Increase </button>
+				<button class="buttonsSmall" onclick="modProperty('BrickCol', 'Dec')"> Decrease </button>
+				<p id="propertyBallSize"> Ball size: </p>
+				<button class="buttonsSmall" onclick="modProperty('BallSize', 'Inc')"> Increase </button>
+				<button class="buttonsSmall" onclick="modProperty('BallSize', 'Dec')"> Decrease </button>
+				<p id="propertyBallSpeed"> Ball speed: </p>
+				<button class="buttonsSmall" onclick="modProperty('BallSpeed', 'Inc')"> Increase </button>
+				<button class="buttonsSmall" onclick="modProperty('BallSpeed', 'Dec')"> Decrease </button>
+				<p id="propertyPaddleSize"> Paddle size: </p>
+				<button class="buttonsSmall" onclick="modProperty('PaddleSize', 'Inc')"> Increase </button>
+				<button class="buttonsSmall" onclick="modProperty('PaddleSize', 'Dec')"> Decrease </button>
+				<p id="propertyPaddleSpeed"> Paddle speed: </p>
+				<button class="buttonsSmall" onclick="modProperty('PaddleSpeed', 'Inc')"> Increase </button>
+				<button class="buttonsSmall" onclick="modProperty('PaddleSpeed', 'Dec')"> Decrease </button>
+				<p id="propertyBrickBlanks"> Blank frequency: </p>
+				<button class="buttonsSmall" onclick="modProperty('BrickBlanks', 'Inc')"> Increase </button>
+				<button class="buttonsSmall" onclick="modProperty('BrickBlanks', 'Dec')"> Decrease </button>	
+			</div>
+			
+			<div class="column" id="middleContent">
+				<p id="score"> Score: 0 </p>
+				<p id="completion"> Completion: 0/90 </p>
+				<canvas class="canvas" id="canvasGame" width="700" height="600"></canvas>
+			</div>
+			
+			<div class="column" id="rightContent">
+				<p>High scores</p>
+				<p class="highScoresBox" id="highScoresBox0">0</p>
+				<p class="highScoresBox" id="highScoresBox1">0</p>
+				<p class="highScoresBox" id="highScoresBox2">0</p>
+				<p class="highScoresBox" id="highScoresBox3">0</p>
+				<p class="highScoresBox" id="highScoresBox4">0</p>
+				<p class="highScoresBox" id="highScoresBox5">0</p>
+				<p class="highScoresBox" id="highScoresBox6">0</p>
+				<p class="highScoresBox" id="highScoresBox7">0</p>
+				<p class="highScoresBox" id="highScoresBox8">0</p>
+				<p class="highScoresBox" id="highScoresBox9">0</p>			
+			</div>	
+		</div>
+		
+		<!-- Always at the bottom -->
+		<div id="footer">
+			<div class="footerBlock">
+				<p> 
+					Use the left and right arrow keys to start playing.
+					Break every block on the screen to win the game.
+				</p>
+				<p> 
+					Select a preset or customise your game on the left.
+				</p>
+			</div>
+			<div class="footerBlock">
+				<button class="buttons" id="buttonGMVE" onclick="setGameMode('VEasy')"> Very easy</button>
+				<button class="buttons" id="buttonGME" onclick="setGameMode('Easy')"> Easy</button>
+				<button class="buttons" id="buttonGMN" onclick="setGameMode('Normal')"> Normal</button>
+				<button class="buttons" id="buttonGMH" onclick="setGameMode('Hard')"> Hard</button>
+				<button class="buttons" id="buttonHMVH" onclick="setGameMode('VHard')"> Very hard</button>
+			</div>
+			<div class="footerBlock">
+				<button class="buttons" id="buttonRestart" onclick="restartGame()"> Restart game</button>
+			</div>
+		</div>
+	</div>
+	
+	<script src="Game.js"></script>
+	
+</body>
+
+</html>
